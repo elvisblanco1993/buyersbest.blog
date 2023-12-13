@@ -31,6 +31,10 @@
             <meta name="twitter:title" content="{{ $title }}">
         @endif
 
+        @if (request()->routeIs('article.show') || request()->routeIs('home'))
+            <meta name="google-adsense-account" content="ca-pub-6691661138979501">
+        @endif
+
 
 
 
