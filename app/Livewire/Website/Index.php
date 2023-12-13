@@ -13,7 +13,7 @@ class Index extends Component
     public function render()
     {
         return view('livewire.website.index', [
-            'articles' => Article::whereNotNull('updated_at')
+            'articles' => Article::whereNotNull('published_at')
                             ->orderBy('published_at', 'DESC')
                             ->paginate('16'),
         ]);

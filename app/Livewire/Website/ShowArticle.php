@@ -16,7 +16,7 @@ class ShowArticle extends Component
     public function mount($slug)
     {
         $this->article = Article::where('slug', $slug)
-                            // ->whereNotNull('published_at')
+                            ->whereNotNull('published_at')
                             ->firstOrFail();
         $this->metadata = [
             'title' => $this->article->title,
