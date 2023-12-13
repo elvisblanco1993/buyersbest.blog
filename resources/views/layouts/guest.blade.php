@@ -33,6 +33,8 @@
 
         @if (request()->routeIs('article.show') || request()->routeIs('home'))
             <meta name="google-adsense-account" content="ca-pub-6691661138979501">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6691661138979501"
+                crossorigin="anonymous"></script>
         @endif
 
 
