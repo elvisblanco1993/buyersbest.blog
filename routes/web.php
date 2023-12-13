@@ -1,12 +1,13 @@
 <?php
 
-use App\Livewire\Article\Index as Articles;
-use App\Livewire\Article\Create as NewArticle;
-use App\Livewire\Article\Edit as EditArticle;
 use App\Livewire\Tag\Index as Tags;
-use App\Livewire\Website\Index as WebsiteHome;
+use Illuminate\Support\Facades\Auth;
 use App\Livewire\Website\ShowArticle;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Article\Index as Articles;
+use App\Livewire\Article\Edit as EditArticle;
+use App\Livewire\Article\Create as NewArticle;
+use App\Livewire\Website\Index as WebsiteHome;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Auth::routes(['register' => true]);
 
 Route::get('/', WebsiteHome::class)->name('home');
 Route::get('/{slug}', ShowArticle::class)->name('article.show');
