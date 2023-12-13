@@ -24,7 +24,7 @@
 
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div class="mt-4" x-cloak x-show="!preview">
-            <textarea wire:model.live="content" cols="30" rows="10" placeholder="Write what you will..."
+            <textarea wire:model.live="content" cols="30" rows="30" placeholder="Write what you will..."
                 class="block w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm"
             ></textarea>
 
