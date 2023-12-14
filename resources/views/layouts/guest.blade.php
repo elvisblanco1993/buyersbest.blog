@@ -34,7 +34,18 @@
         @if (request()->routeIs('article.show') || request()->routeIs('home'))
             <meta name="google-adsense-account" content="ca-pub-6691661138979501">
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6691661138979501"
-                crossorigin="anonymous"></script>
+                crossorigin="anonymous"
+            ></script>
+
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-QGXW91GD8M"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-QGXW91GD8M');
+            </script>
         @endif
 
 
